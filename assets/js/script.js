@@ -16,11 +16,11 @@ $(document).ready(function() {
     $("#time-10 .task").val(localStorage.getItem("time-10"));
     $("#time-11 .task").val(localStorage.getItem("time-11")); 
     $("#time-12 .task").val(localStorage.getItem("time-12"));
-    $("#time-1 .task").val(localStorage.getItem("time-1"));
-    $("#time-2 .task").val(localStorage.getItem("time-2"));
-    $("#time-3 .task").val(localStorage.getItem("time-3"));
-    $("#time-4 .task").val(localStorage.getItem("time-4"));
-    $("#time-5 .task").val(localStorage.getItem("time-5"));
+    $("#time-13 .task").val(localStorage.getItem("time-13"));
+    $("#time-14 .task").val(localStorage.getItem("time-14"));
+    $("#time-15 .task").val(localStorage.getItem("time-15"));
+    $("#time-16 .task").val(localStorage.getItem("time-16"));
+    $("#time-17 .task").val(localStorage.getItem("time-17"));
 
    
     function timeUpdate() {
@@ -32,6 +32,7 @@ $(document).ready(function() {
 
             if (blockTime < currentTime) {
                 $(this).addClass("past");
+                console.log(this);
             }
             else if (blockTime === currentTime) {
                 $(this).removeClass("past");
@@ -42,6 +43,7 @@ $(document).ready(function() {
                 $(this).removeClass("past");
                 $(this).removeClass("present");
                 $(this).addClass("future");
+                console.log(this);
             }
         });
     }
