@@ -15,3 +15,5 @@ This website presents the user with timeblocks from 9AM to 5pm for the user to i
 * HTML
 * CSS
 * Javascript
+* JQuery
+* Bootstrap
